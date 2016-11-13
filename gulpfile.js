@@ -3,10 +3,7 @@ var eslint = require('gulp-eslint');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 
-gulp.task('default', [ 'lint' ], function() {
-  gulp.src('./app/**/*.js')
-    .pipe(gulp.dest('build'));
-});
+gulp.task('default', [ 'styles', 'scripts' ]);
 
 gulp.task('lint', function () {
   gulp.src('./app/**/*.js')
@@ -24,7 +21,7 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('scripts', function () {
+gulp.task('scripts', [ 'lint' ], function () {
   gulp.src('./app/**/*.js')
     .pipe(babel({
       presets: ['es2015']
