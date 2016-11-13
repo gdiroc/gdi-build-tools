@@ -8,7 +8,7 @@ class Vehicle {
   }
 
   print () {
-    console.log(`This ${this.wheels}-wheeled vehicle has a driver of ${this.driver}`)
+    console.log(`This ${this.wheels}-wheeled vehicle has a driver of ${this.driver}`);
   }
 }
 
