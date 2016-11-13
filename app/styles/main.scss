@@ -1,0 +1,7 @@
+body {
+    background: gold;
+
+    &:hover {
+        background: lighten(gold, 10%);
+    }
+}

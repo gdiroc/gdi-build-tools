@@ -1,3 +1,5 @@
+require('./styles/main.scss');
+
 var $ = require('jquery');
 var Vehicle = require('./vehicle');
 
