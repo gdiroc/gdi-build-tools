@@ -3,7 +3,12 @@ var eslint = require('gulp-eslint');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 
-gulp.task('default', [ 'styles', 'scripts' ]);
+gulp.task('default', [ 'styles', 'scripts', 'watch' ]);
+
+gulp.task('watch', function () {
+  gulp.watch('./app/**/*.js', [ 'scripts' ]);
+  gulp.watch('./app/**/*.scss', [ 'styles' ]);
+});
 
 gulp.task('lint', function () {
   gulp.src('./app/**/*.js')
