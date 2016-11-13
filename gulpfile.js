@@ -19,6 +19,6 @@ gulp.task('lint', function () {
 
 gulp.task('styles', function () {
   gulp.src('./app/**/*.scss')
-    .pipe(sass().on('error', sass.logError)) // format specified by gulp-sass README
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) // format specified by gulp-sass README
     .pipe(gulp.dest('./build'));
 });
