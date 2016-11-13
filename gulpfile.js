@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 
-gulp.task('default', function() {
+gulp.task('default', [ 'lint' ], function() {
   gulp.src('./app/**/*.js')
     .pipe(gulp.dest('build'));
 });
