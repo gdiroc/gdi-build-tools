@@ -1,0 +1,8 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "How to be a Lazy Developer: An Intro to Build Tools",
+    "packageVersion": "1.0.0",
+    "useSass": true,
+    "deployToGithubPages": false
+  }
+}
