@@ -1,5 +1,10 @@
 [
-    "index.md",
+    {
+        "filename": "index.md",
+        "attr": {
+            "data-small-headers": "true"
+        }
+    },
     "class-requirements.md",
     "npm.md",
     "the-problem.md",
