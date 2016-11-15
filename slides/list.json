@@ -1,5 +1,10 @@
 [
-    "index.md",
+    {
+        "filename": "index.md",
+        "attr": {
+            "data-small-headers": "true"
+        }
+    },
     "class-requirements.md",
     "npm.md",
     "the-problem.md",
@@ -7,6 +12,7 @@
     "build-tools.md",
     "gulp.md",
     "demo-time.md",
+    "what-did-we-miss.md",
     "alternatives-to-gulp.md",
     "gui-tools.md"
 ]
