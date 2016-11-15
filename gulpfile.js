@@ -3,6 +3,7 @@ var eslint = require('gulp-eslint');
 var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 var sourcemaps = require('gulp-sourcemaps');
+var webserver = require('gulp-webserver');
 
 gulp.task('default', [ 'styles', 'scripts', 'watch' ]);
 
@@ -11,14 +12,20 @@ gulp.task('watch', function () {
   gulp.watch('./app/**/*.scss', [ 'styles' ]);
 });
 
+gulp.task('webserver', [ 'watch' ], function() {
+  gulp.src('./')
+    .pipe(webserver({
+      livereload: true,
+      open: true
+    }));
+});
+
 gulp.task('lint', function () {
   gulp.src('./app/**/*.js')
     // Run linter and save results on the eslint object (doesn't output)
     .pipe(eslint())
     // Take the output and show it in the console
-    .pipe(eslint.format())
-    // If there are any errors, stop right here instead of continuing
-    .pipe(eslint.failAfterError());
+    .pipe(eslint.format());
 });
 
 gulp.task('styles', function () {
