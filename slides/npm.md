@@ -26,6 +26,7 @@ app/
 ```
 
 note:
-  Demo installing globally with `grunt`
+  Demo installing globally with `gulp` and having it exist as a command line tool
+  ONLY install globally if you need it on the command line - otherwise it goes in your package.json file
   Notice how package3 doesn't exist in package.json - each dependency
   will have sub-dependencies, and all of them will appear in your node_modules folder
