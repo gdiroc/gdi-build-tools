@@ -1,7 +1,8 @@
 ##  Scaffolding
 
-* Generate a "starter project"
-* Can help you build out components once developing your app
+* What does it to?
+  * Generate a "starter project"
+  * Easily create skeleton files for new features
 * Languages/Platforms
   * [Ruby on Rails](http://guides.rubyonrails.org/command_line.html) - "rails new"
   * Python - tools like [Cookiecutter](https://github.com/audreyr/cookiecutter)
