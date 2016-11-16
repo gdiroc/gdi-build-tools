@@ -5,11 +5,17 @@
             "data-small-headers": "true"
         }
     },
+    "introductions.md",
     "class-requirements.md",
     "npm.md",
     "the-problem.md",
+    "scaffolding.md",
     "yeoman.md",
     "build-tools.md",
+    "makefile.md",
+    "makefile-example.md",
+    "makefile-python-example.md",
+    "makefile-ruby.md",
     "gulp.md",
     "demo-time.md",
     "what-did-we-miss.md",
